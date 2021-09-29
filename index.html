@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- https://www.bootstrapcdn.com/ -->
+
+    <title>String manipulation - assignment 3</title>
+</head>
+
+<body>
+    <h1>String manipulation</h1>
+
+    <div id="app">
+        <input v-model.lazy="message" placeholder="Type a word!">
+        <button v-on:click="ShowIt()" type="button"> Add word</button>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> Word in Default</th>
+                    <th> Word in Lower</th>
+                    <th> Word in Upper </th>
+
+                </tr>
+            </thead>
+            <tbody> 
+                <tr> 
+                    <td>  {{message}} </td>
+                    <td> {{lower}} </td>
+                    <td> {{upper}} </td>
+                </tr>
+            </tbody>
+            <tr>
+                <ol>
+                    <li>{{message}}</li>
+                    <li>{{lower}} </li>
+                    <li>{{upper}}</li>
+                </ol>
+
+    </div>
+
+    </table>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
